@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./componente1.component.css']
 })
 export class Componente1Component implements OnInit {
+  nombre:string;
+  edad:number;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  nuevoRegistro (){
+    console.log(this.nombre,this.edad);
   }
 
 }

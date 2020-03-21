@@ -1,1 +1,19 @@
-<p>componente1 works!</p>
+<form>
+    <input type="text" placeholder="Nombre" name="nombre" [(ngModel)]="nombre"><br>
+    <input type="text" placeholder="Edad" name="edad" [(ngModel)]="edad"><br>
+    <button (click)="nuevoRegistro()">Agregar</button>
+</form>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+    </tr>
+    <tr>
+        <td>Daniel</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>Nelson</td>
+        <td>27</td>
+    </tr>
+</table>
