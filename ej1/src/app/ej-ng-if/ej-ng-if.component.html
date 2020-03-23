@@ -1,15 +1,36 @@
 <div class="contenedor">
     <div *ngIf="valor1">
         <h1>Texto 1</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil sint dolore cupiditate, architecto consequuntur voluptatum earum aspernatur rerum velit nulla ex ipsam neque repudiandae magnam, dolorem aut officiis. Corrupti nam nisi ipsa, ratione aliquam harum incidunt accusamus, illo sapiente saepe nulla praesentium aliquid ullam mollitia consequuntur doloremque. Iusto consequuntur velit deserunt, repellendus fuga earum, cupiditate quasi harum ad soluta itaque voluptate necessitatibus minima sunt debitis aliquam similique perferendis, fugit tempora. Possimus voluptatum voluptas hic veniam quia magnam velit, fugiat est? A, voluptas enim tenetur sit dolorem sunt. Voluptatum harum delectus assumenda neque, officiis modi corporis rem ea dolor. Sit, doloribus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil sint dolore cupiditate, architecto
+            consequuntur voluptatum earum aspernatur rerum velit nulla ex ipsam neque repudiandae magnam, dolorem aut
+            officiis. Corrupti nam nisi ipsa, ratione aliquam harum incidunt accusamus, illo sapiente saepe nulla
+            praesentium aliquid ullam mollitia consequuntur doloremque. Iusto consequuntur velit deserunt, repellendus
+            fuga earum, cupiditate quasi harum ad soluta itaque voluptate necessitatibus minima sunt debitis aliquam
+            similique perferendis, fugit tempora. Possimus voluptatum voluptas hic veniam quia magnam velit, fugiat est?
+            A, voluptas enim tenetur sit dolorem sunt. Voluptatum harum delectus assumenda neque, officiis modi corporis
+            rem ea dolor. Sit, doloribus!</p>
     </div>
 </div>
 <div class="contenedor">
-    <div *ngIf="valor2"> 
+    <div *ngIf="valor2; else otroTexto">
         <h1>Texto 2</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil sint dolore cupiditate, architecto consequuntur voluptatum earum aspernatur rerum velit nulla ex ipsam neque repudiandae magnam, dolorem aut officiis. Corrupti nam nisi ipsa, ratione aliquam harum incidunt accusamus, illo sapiente saepe nulla praesentium aliquid ullam mollitia consequuntur doloremque. Iusto consequuntur velit deserunt, repellendus fuga earum, cupiditate quasi harum ad soluta itaque voluptate necessitatibus minima sunt debitis aliquam similique perferendis, fugit tempora. Possimus voluptatum voluptas hic veniam quia magnam velit, fugiat est? A, voluptas enim tenetur sit dolorem sunt. Voluptatum harum delectus assumenda neque, officiis modi corporis rem ea dolor. Sit, doloribus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil sint dolore cupiditate, architecto
+            consequuntur voluptatum earum aspernatur rerum velit nulla ex ipsam neque repudiandae magnam, dolorem aut
+            officiis. Corrupti nam nisi ipsa, ratione aliquam harum incidunt accusamus, illo sapiente saepe nulla
+            praesentium aliquid ullam mollitia consequuntur doloremque. Iusto consequuntur velit deserunt, repellendus
+            fuga earum, cupiditate quasi harum ad soluta itaque voluptate necessitatibus minima sunt debitis aliquam
+            similique perferendis, fugit tempora. Possimus voluptatum voluptas hic veniam quia magnam velit, fugiat est?
+            A, voluptas enim tenetur sit dolorem sunt. Voluptatum harum delectus assumenda neque, officiis modi corporis
+            rem ea dolor. Sit, doloribus!</p>
     </div>
 </div>
+<ng-template #otroTexto>
+    <div>
+        <h1>Otro Texto </h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla a rem numquam repellat fugiat, sequi
+            laudantium enim id eaque illo?</p>
+    </div>
+</ng-template>
 
 <br>
 <button (click)="valor1=true">texto1</button>
