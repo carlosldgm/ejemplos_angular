@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { Componente1Component } from './componente1/componente1.component';
 import { FormsModule } from '@angular/forms';
 import { EjNgIFComponent } from './ej-ng-if/ej-ng-if.component';
+import { EjNgForComponent } from './ej-ng-for/ej-ng-for.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Componente1Component,
-    EjNgIFComponent
+    EjNgIFComponent,
+    EjNgForComponent
   ],
   imports: [
     BrowserModule,
