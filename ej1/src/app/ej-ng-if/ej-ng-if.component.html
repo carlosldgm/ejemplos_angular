@@ -1,0 +1,19 @@
+<div class="contenedor">
+    <div *ngIf="valor1">
+        <h1>Texto 1</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil sint dolore cupiditate, architecto consequuntur voluptatum earum aspernatur rerum velit nulla ex ipsam neque repudiandae magnam, dolorem aut officiis. Corrupti nam nisi ipsa, ratione aliquam harum incidunt accusamus, illo sapiente saepe nulla praesentium aliquid ullam mollitia consequuntur doloremque. Iusto consequuntur velit deserunt, repellendus fuga earum, cupiditate quasi harum ad soluta itaque voluptate necessitatibus minima sunt debitis aliquam similique perferendis, fugit tempora. Possimus voluptatum voluptas hic veniam quia magnam velit, fugiat est? A, voluptas enim tenetur sit dolorem sunt. Voluptatum harum delectus assumenda neque, officiis modi corporis rem ea dolor. Sit, doloribus!</p>
+    </div>
+</div>
+<div class="contenedor">
+    <div *ngIf="valor2"> 
+        <h1>Texto 2</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil sint dolore cupiditate, architecto consequuntur voluptatum earum aspernatur rerum velit nulla ex ipsam neque repudiandae magnam, dolorem aut officiis. Corrupti nam nisi ipsa, ratione aliquam harum incidunt accusamus, illo sapiente saepe nulla praesentium aliquid ullam mollitia consequuntur doloremque. Iusto consequuntur velit deserunt, repellendus fuga earum, cupiditate quasi harum ad soluta itaque voluptate necessitatibus minima sunt debitis aliquam similique perferendis, fugit tempora. Possimus voluptatum voluptas hic veniam quia magnam velit, fugiat est? A, voluptas enim tenetur sit dolorem sunt. Voluptatum harum delectus assumenda neque, officiis modi corporis rem ea dolor. Sit, doloribus!</p>
+    </div>
+</div>
+
+<br>
+<button (click)="valor1=true">texto1</button>
+<button (click)="valor2=!valor2">texto1</button>
+
+<br>
+<p>valor1= {{valor1}}</p>
